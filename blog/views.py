@@ -28,3 +28,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
 class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
+
+    #
+    # def retrieve(self, request, pk=None):
+    #     return Response(status=200)
